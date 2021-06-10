@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <style>
+ 
+	*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-decoration:none;
+	}
+	.sidebar{
+	position:absolute;
+	left:0;
+	width:250px;
+text-decoration:none;
+	background:#042331;
+	}
+	.sidebar header{
+	font-size:22px;
+	color:white;
+	text-align:center;
+	line-height:70px;
+	background:#063146;
+	user-select:none;
+	}
+	.sidebar ul a{
+	display:block;
+	height:100%;
+	width:100%;
+	font-size:20px;
+	color:white;
+	line-height:65px;
+	padding-left:40px;
+	box-sizing:border-box;
+	border-top:1px solid rgba(255,255,255,.1);
+	border-bottom:1px solid black;
+	transition:.6s;
+	
+	}
+	ul li:hover a{
+	padding-left:50px;
+	}
+	</style>
+	
+	
+  </head>
+  <body>
+  
+	<div class="sidebar">
+	<header>Python</header>
+	<ul>
+	<li><a href="introduction.html">Introduction</li></a>
+	<li><a href="syntax.html">Basic Syntax</li></a>
+	<li><a href="variable-types.html">Variable Types</li></a>
+	<li><a href="operators.html">Basic Operators</li></a>
+	<li><a href="decision.html">Decision Making</li></a>
+	<li><a href="loop.html">Loops</li></a>
+	
+	<li><a href="module.html">Module</li></a>
+		<li><a href="timeanddate.html">Date And Time</li></a>
+	<li><a href="function.html">Functions</li></a>
+	<li><a href="dictionary.html">Dictionary</li></a>
+	<li><a href="file.html">Files I/O</li></a>
+	<li><a href="exeption.html">Exceptions</li></a>
+	</ul>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <style>
+   body{
+background-color:white;
+}
+.d1{
+position:absolute;
+left:350px;
+}
+.center{
+text-align:center;
+}
+ </style>
+ </head>
+ <body>
+<div class="d1">
+<div class="row">
+<div class="col-10">
+<div class="container p-3 my-3 border">
+<div class="container p-3 my-3 bg-dark text-white"> 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ <h3 align="center"> loops </h3>
+ </div>
+ <h3>While Loop</h3>
+ 
+ A while loop statement in Python programming language repeatedly executes a target statement as long as a given condition is true.
+<img src="whileloop.jpg" align="center">
+<h4>While loop statement Example</h4>
+
+    <div class="container p-3 my-3 border">
+<div class="container p-3 my-3 bg-dark text-white">
+count = 0<br>
+while (count < 9):<br>
+   print 'The count is:', count<br>
+   count = count + 1<br>
+
+print "Good bye!"
+ </div>
+ </div>
+When the above code is executed, it produces the following result −
+     <div class="container p-3 my-3 border">
+<div class="container p-3 my-3 bg-dark text-white">
+The count is: 0<br>
+The count is: 1<br>
+The count is: 2<br>
+The count is: 3<br>
+The count is: 4<br>
+The count is: 5<br>
+The count is: 6<br>
+The count is: 7<br>
+The count is: 8<br>
+Good bye!
+ </div>
+ </div><br><br>
+ 
+ <h3>For loop</h3>
+ For loops can iterate over a sequence of numbers using the "range" and "xrange" functions. The difference between range and xrange is that the range function returns a new list with numbers of that specified range, whereas xrange returns an iterator, which is more efficient. (Python 3 uses the range function, which acts like xrange). Note that the range function is zero based
+ <img src="forloop.jpg" align="center">
+ <h4>For loop Example</h4>
+  <div class="container p-3 my-3 border">
+<div class="container p-3 my-3 bg-dark text-white">
+# Prints out the numbers 0,1,2,3,4<br>
+for x in range(5):<br>
+    print(x)<br>
+
+# Prints out 3,4,5<br>
+for x in range(3, 6):<br>
+    print(x)<br>
+
+# Prints out 3,5,7<br>
+for x in range(3, 8, 2):<br>
+    print(x)
+ </div>
+ </div>
+ output
+  <div class="container p-3 my-3 border">
+<div class="container p-3 my-3 bg-dark text-white">
+ 0<br>
+1<br>
+2<br>
+3<br>
+4<br>
+3<br>
+4<br>
+5<br>
+3<br>
+5<br>
+7
+ </div>
+ </div><br><br>
+ <h3>Nested For Loops</h3>
+ A nested loop is a loop inside a loop.
+
+The "inner loop" will be executed one time for each iteration of the "outer loop":
+ 
+  <img src="nestedforloop.png" align="center">
+ 
+ <h4>Nested Loops Example</h4>
+   <div class="container p-3 my-3 border">
+<div class="container p-3 my-3 bg-dark text-white">
+adj = ["red", "big", "tasty"]<br>
+fruits = ["apple", "banana", "cherry"]<br>
+
+for x in adj:<br>
+  for y in fruits:<br>
+    print(x, y)
+
+ </div>
+ </div>
+ Output
+     <div class="container p-3 my-3 border">
+<div class="container p-3 my-3 bg-dark text-white">
+
+
+​
+red apple<br>
+red banana<br>
+red cherry<br>
+big apple<br>
+big banana<br>
+big cherry<br>
+tasty apple<br>
+tasty banana<br>
+tasty cherry
+
+ </div>
+ </div>
+ </body>
+ </html>
+ 
+ 
